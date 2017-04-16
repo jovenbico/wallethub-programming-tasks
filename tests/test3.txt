@@ -7,3 +7,5 @@ INSERT INTO test3 VALUES (1, 'Smith'), (2, 'Julio|Jones|Falcons'), (3,
 INSERT INTO test3 VALUES (7, null);
 
 select * from test3;
+
+CALL GetAllBeautyTestData(); -- latency o=OK
