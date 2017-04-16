@@ -1,0 +1,24 @@
+CREATE TABLE `bugs` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `open_date` DATE NULL,
+    `close_date` DATE NULL,
+    `severity` CHAR(1) NULL,
+    PRIMARY KEY (`id`)
+);
+
+insert into bugs(open_date, close_date, severity) 
+values ('2017-04-15', '2017-04-16', '1'),
+	('2017-04-15', '2017-04-16', '2'),
+	('2017-04-15', '2017-04-16', '3');
+
+insert into bugs(open_date, close_date, severity) 
+values ('2017-04-14', null, '1'),
+	('2017-04-14', null, '2');
+
+select * from bugs;
+
+select count(id), open_date
+from bugs
+where open_date between '2017-04-14' and '2017-04-15'
+group by open_date
+order by open_date;
