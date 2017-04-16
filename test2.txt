@@ -1,0 +1,3 @@
+SELECT INITCAP('UNITED states Of AmERIca') = 'United States Of America';
+SELECT INITCAP('xXx yyY Zzz') = 'Xxx Yyy Zzz';
+SELECT INITCAP(NULL);
