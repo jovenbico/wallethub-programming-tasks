@@ -13,3 +13,4 @@ buildNumber.properties
 /.project
 /.settings/
 /src/main/java
+/src/test/java
